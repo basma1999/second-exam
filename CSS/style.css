@@ -1,0 +1,149 @@
+body{
+    background-color: #0D0D0D;
+    color: #f9f6f6;
+  
+}
+
+/*                   Navbar           */
+#sideNav{
+    z-index: 999;
+}
+#sideNav .nav-tab{
+    background-color: #0D0D0D;
+}
+#sideNav .nav-links .link{
+    cursor: pointer;
+    position: relative;
+}
+#sideNav .nav-head{
+    text-align: center;
+    background-color: #fff;
+    color: black;
+}
+#sideNav .nav-head img{
+    width: 80px;
+}
+
+i{
+    cursor: pointer;
+} 
+
+#contactBtn{
+    width: 70px;
+}
+
+
+
+
+#dataRows .meal{
+    cursor: pointer;
+}
+#dataRows .meal img{
+    width: 100%;
+}
+#dataRows .meal .layer-meal{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s;
+    color: black;
+}
+#dataRows .meal:hover .layer-meal{
+    top: 0%;
+}
+
+
+
+/*   *********   search page  ********  */
+
+#searchInputs input{
+    color: #fff !important;
+}
+
+/*   *********   categories page  ********  */
+
+#dataRows .my-meal{
+    cursor: pointer;
+}
+#dataRows .my-meal img{
+    width: 100%;
+}
+#dataRows .my-meal .layer-meal{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s;
+    
+}
+#dataRows .my-meal:hover .layer-meal{
+    top: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* spiner for loading  */
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px dotted #FFF;
+    border-style: solid solid dotted dotted;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px dotted #FF3D00;
+    border-style: solid solid dotted;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    animation: rotationBack 1s linear infinite;
+    transform-origin: center center;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  } 
